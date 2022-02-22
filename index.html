@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p14_vanguardias</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+    body{
+        background-color: beige;
+    }
+    .m{
+        position: absolute;
+        top: -10%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec1{
+        position: absolute;
+        top: 32%;
+        left: 15%;
+        width: 50px;
+        height: 250px;
+        background-color: black;
+    }
+    .o{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec2{
+        position: absolute;
+        top: 12%;
+        left: 25%;
+        width: 275px;
+        height: 50px;
+        background-color: black;
+    }
+    .é{
+        position: absolute;
+        top: -10%;
+        left: 45%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec3{
+        position: absolute;
+        top: 80%;
+        left: 25%;
+        width: 275px;
+        height: 50px;
+        background-color: black;
+    }
+    .n{
+        position: absolute;
+        top: 55%;
+        left: 45%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec4{
+        position: absolute;
+        top: 12%;
+        left: 60%;
+        width: 275px;
+        height: 50px;
+        background-color: black;
+    }
+    .c{
+        position: absolute;
+        top: -10%;
+        left: 80%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec5{
+        position: absolute;
+        top: 80%;
+        left: 60%;
+        width: 275px;
+        height: 50px;
+        background-color: black;
+    }
+    .a{
+        position: absolute;
+        top: 55%;
+        left: 80%;
+        width: 200px;
+        height: 200px;
+    }
+    .rec6{
+        position: absolute;
+        top: 32%;
+        left: 85%;
+        width: 50px;
+        height: 250px;
+        background-color: black;
+    }
+    .l{
+        position: absolute;
+        top: 0%;
+        left: 25%;
+        width: 200px;
+        height: 200px;
+        transform: rotate(-25deg);
+    }
+    .img{
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        width: 200px;
+        height: 200px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10em;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15em;
+    }
+    
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.l').hide();
+                $('.img').click(function(){
+                    $('.l').fadeToggle();
+                    });
+                $('.l').mouseenter(function(){
+                    $('.rec1, .rec2, .rec3, .rec4, .rec5, .rec6').css("background-color","red");
+                    });
+                $('.l').mouseleave(function(){
+                    $('.rec1, .rec2, .rec3, .rec4, .rec5, .rec6').css("background-color","black");
+                    });
+            });
+
+    </script>
+</head>
+<body>
+    <div class="m"><h1>M</h1></div>
+    <div class="rec1"></div>
+    <div class="o"><h1>O</h1></div>
+    <div class="rec2"></div>
+    <div class="é"><h1>É</h1></div>
+    <div class="rec3"></div>
+    <div class="n"><h1>N</h1></div>
+    <div class="rec4"></div>
+    <div class="c"><h1>C</h1></div>
+    <div class="rec5"></div>
+    <div class="a"><h1>A</h1></div>
+    <div class="rec6"></div>
+    <div class="l"><h2>3</h2></div>
+    <div class="img"><img src="img/png-transparent-circular-saw-blade-cutting-tool-crosscut-saw.png" alt=""></div>
+</body>
+</html>
